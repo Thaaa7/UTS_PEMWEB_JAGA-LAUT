@@ -981,7 +981,7 @@ h2 em {
   background: #2377b9;
 }
 
-/* Panduan Punya Panjuyyy */
+/* Panduan */
 .action-list {
   border-top: 1px solid var(--line);
 }
@@ -1106,6 +1106,281 @@ h2 em {
   line-height: 1.6;
 }
 
+/* Tentang dan referensi */
+.about-intro-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: clamp(45px, 8vw, 100px);
+}
+.about-intro-grid h2 {
+  max-width: 460px;
+}
+.about-prose p {
+  margin-bottom: 17px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 2;
+}
+.project-principles .section-heading {
+  margin-bottom: 32px;
+}
+.principle-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.principle-grid article {
+  padding: 27px 25px;
+  background: rgba(255, 255, 255, 0.82);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+.principle-grid article > span {
+  display: inline-block;
+  margin-bottom: 23px;
+  color: var(--sea);
+  font-size: 11px;
+  font-weight: 850;
+}
+.principle-grid h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  letter-spacing: -0.5px;
+}
+.principle-grid p {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.9;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+.team-card {
+  padding: 22px 18px 20px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+}
+.team-num {
+  color: var(--muted);
+  font-size: 8px;
+  font-weight: 850;
+  letter-spacing: 1.4px;
+}
+.team-avatar {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  margin: 17px 0;
+  color: white;
+  background: var(--sea);
+  border-radius: 14px 14px 14px 4px;
+  font-size: 13px;
+  font-weight: 850;
+}
+.team-avatar-blue {
+  background: #317ca1;
+}
+.team-avatar-sand {
+  color: #684a2b;
+  background: #e8d5b7;
+}
+.team-avatar-coral {
+  color: #5f3427;
+  background: #f0b099;
+}
+.team-card h3 {
+  min-height: 44px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+.team-card > p {
+  margin-bottom: 14px;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.8;
+}
+.team-card > p strong {
+  color: var(--ink);
+}
+.team-card ul {
+  margin: 0;
+  padding-left: 16px;
+  color: #566b66;
+  font-size: 10px;
+  line-height: 1.85;
+}
+.tech-grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  align-items: center;
+  gap: 70px;
+}
+.tech-grid h2 {
+  margin-bottom: 17px;
+}
+.tech-grid > div:first-child > p:not(.eyebrow) {
+  max-width: 470px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.9;
+}
+.tech-stack {
+  padding: 10px 25px;
+  background: white;
+  border: 1px solid var(--line);
+  border-radius: 17px;
+}
+.tech-row {
+  display: grid;
+  grid-template-columns: 67px 1fr;
+  align-items: center;
+  gap: 17px;
+  padding: 17px 0;
+  border-bottom: 1px solid var(--line);
+}
+.tech-row:last-child {
+  border-bottom: 0;
+}
+.tech-badge {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 43px;
+  color: white;
+  background: #e47c4b;
+  border-radius: 9px;
+  font-size: 11px;
+  font-weight: 850;
+}
+.tech-badge-css {
+  background: #2877a7;
+}
+.tech-badge-gh {
+  background: var(--ink-deep);
+}
+.tech-row strong {
+  font-size: 12px;
+}
+.tech-row p {
+  margin: 3px 0 0;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.7;
+}
+.references-section {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 65px;
+}
+.references-section > div:first-child > p:not(.eyebrow) {
+  max-width: 340px;
+  margin: 17px 0 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.9;
+}
+.reference-list {
+  border-top: 1px solid var(--line);
+}
+.reference-list > a {
+  display: grid;
+  grid-template-columns: 30px 1fr 20px;
+  align-items: center;
+  gap: 13px;
+  padding: 15px 4px;
+  border-bottom: 1px solid var(--line);
+}
+.reference-list > a > span {
+  color: var(--sea);
+  font-size: 10px;
+  font-weight: 850;
+}
+.reference-list strong,
+.reference-list small {
+  display: block;
+}
+.reference-list strong {
+  font-size: 11px;
+  line-height: 1.5;
+}
+.reference-list small {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 10px;
+  line-height: 1.5;
+}
+.reference-list b {
+  color: var(--sea);
+  font-size: 15px;
+}
+.section-heading.heading-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+}
+.section-heading.heading-row > div {
+  text-align: center;
+}
+.section-heading.heading-row .section-intro {
+  max-width: 460px;
+  margin: 0 auto;
+  text-align: center;
+}
+.team-card {
+  text-align: center;
+}
+.team-card .team-num {
+  display: block;
+  text-align: center;
+}
+.team-card .team-avatar {
+  margin: 17px auto;
+}
+.team-card h3 {
+  text-align: center;
+}
+.team-card > p {
+  text-align: center;
+}
+.team-card ul {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+  text-align: center;
+}
+.team-card ul li {
+  text-align: center;
+  line-height: 1.9;
+}
+.team-card ul li + li {
+  margin-top: 4px;
+}
+.team-avatar {
+  display: block;
+  width: 92px;
+  height: 92px;
+  margin: 17px auto;
+  overflow: hidden;
+  border-radius: 15px;
+  background: var(--line);
+}
+.team-avatar img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
 /* Footer */
 .site-footer {
   padding: 55px 0 0;
@@ -1170,6 +1445,14 @@ h2 em {
   margin: 0;
   color: #7f9c93;
   font-size: 9px;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 480px) {
+  .team-avatar {
+    width: 82px;
+    height: 82px;
+  }
 }
 
 /* Responsivitas untuk tablet dan smartphone */
